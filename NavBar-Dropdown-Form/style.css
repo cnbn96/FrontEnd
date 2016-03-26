@@ -1,0 +1,100 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+/*css for register*/
+body{
+  font-family:'Montserrat',sans-serif
+}
+#contain form{
+  min-width:670px;
+  height:auto;
+}
+.warning{
+  color:red;
+  font-weight:bold;
+}
+
+#contain{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+  display:none
+}
+#contain.gone{
+  display:block;
+}
+body.add{
+  background:rgba(0,0,0,0.15);
+}
+
+/*css dropdown login*/
+.dropdown{
+  position:relative;
+  width:200px;
+  cursor:pointer;
+}
+#btnLogin{
+  position:relative;
+  color:#9d9d9d;
+  padding-top:15px;
+  padding-bottom:15px;
+  line-height:20px;
+  display:block;
+  text-decoration:none !important;
+  margin-left:20px;
+}
+#btnLogin:hover{
+  color:#fff;
+}
+.dropdown-content{
+  width:100%;
+  background:#fff;
+  border-radius:4px;
+  box-shadow:0 0 40px -10px #000;
+  color:black;
+  margin-top:24px;
+  max-height:0;
+  position:absolute;
+  overflow:hidden;
+  transition:all .5s;
+}
+.down{
+  display:block;
+  max-height:300px
+}
+.arrow{
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-bottom:10px solid #fff;
+ position:absolute;
+  right:20px;
+  bottom:-24px;
+  display:none;
+  z-index:1;
+}
+.arrow.gone{
+  display:block
+}
+.dropdown-content p{
+  padding:15px 14px;
+  margin:0;
+  transition:all .5s;
+}
+.dropdown-content p:hover{
+  background:#3B444B;
+  -webkit-transform:scale(1.05);
+  color:rgba(255,255,255,0.8);
+  box-shadow:0 0 30px -10px #000
+}
+.dropdown-content button{
+  background:#fff;
+  border:0px;
+  padding:10px;
+  width:100%;
+}
+.dropdown-content button:hover{
+  background:#3B444B;
+  -webkit-transform:scale(1.05);
+  color:rgba(255,255,255,0.8);
+  box-shadow:0 0 30px -10px #000
+}
